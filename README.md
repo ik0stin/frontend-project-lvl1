@@ -1,4 +1,8 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ik0stin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ik0stin/frontend-project-lvl1/actions)
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+
+[![github-actions-lint](https://github.com/ik0stin/frontend-project-lvl1/actions/workflows/github-actions-lint/badge.svg)](https://github.com/ik0stin/frontend-project-lvl1/actions)
