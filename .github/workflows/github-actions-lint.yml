@@ -1,4 +1,4 @@
-name: github-actions-lint
+name: github-actions-test
 
 on:
   push:
