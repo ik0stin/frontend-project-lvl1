@@ -12,3 +12,6 @@ https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo
 
 <!-- game calc -->
 https://asciinema.org/a/6C52GnnAX8Fe39qdMoBRMSJZe
+
+<!-- game gcd -->
+https://asciinema.org/a/9TU76l31sm8mpBQTaiAzm0bks
