@@ -9,7 +9,7 @@ const newGame = (gameQuestion, gameQuestionAnswer) => {
   for (let i = 0; i < 3; i += 1) {
     const [question, answer] = gameQuestionAnswer();
     console.log(`Quesion: ${question}`);
-    const yourAnswer = Number(readlineSync.question('Your answer: '));
+    const yourAnswer = readlineSync.question('Your answer: ');
     if (yourAnswer === answer) {
       console.log('Correct');
     } else {

@@ -7,5 +7,8 @@
 
 [![github-actions-test](https://github.com/ik0stin/frontend-project-lvl1/actions/workflows/github-actions-test/badge.svg)](https://github.com/ik0stin/frontend-project-lvl1/actions)
 
-
+<!-- game is even -->
 https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo
+
+<!-- game calc -->
+https://asciinema.org/a/6C52GnnAX8Fe39qdMoBRMSJZe

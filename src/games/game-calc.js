@@ -29,7 +29,7 @@ const gameQuestionAnswer = () => {
   const rundomNumberSecond = Math.floor(Math.random() * 100);
 
   const question = `${rundomNumberFirst} ${operators[rundomNumberOfOperator]} ${rundomNumberSecond}`;
-  const answer = arithmetic(rundomNumberFirst, rundomNumberSecond, operators[rundomNumberOfOperator]);
+  const answer = String(arithmetic(rundomNumberFirst, rundomNumberSecond, operators[rundomNumberOfOperator]));
 
   return [question, answer];
 };
