@@ -18,3 +18,6 @@ https://asciinema.org/a/9TU76l31sm8mpBQTaiAzm0bks
 
 <!-- game progression -->
 https://asciinema.org/a/lVZbjzKmRj3Mm2LibNWWCqn3T
+
+<!-- game prime -->
+https://asciinema.org/a/azqsGJm66FnQi1n1IqbYqnPZk
