@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import newGame from '../index.js';
 
 const gameQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
