@@ -15,3 +15,6 @@ https://asciinema.org/a/6C52GnnAX8Fe39qdMoBRMSJZe
 
 <!-- game gcd -->
 https://asciinema.org/a/9TU76l31sm8mpBQTaiAzm0bks
+
+<!-- game progression -->
+https://asciinema.org/a/lVZbjzKmRj3Mm2LibNWWCqn3T
