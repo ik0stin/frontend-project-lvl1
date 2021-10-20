@@ -11,8 +11,9 @@ const greatestCommonDivisor = (a, b) => {
 };
 
 const gameQuestionAnswer = () => {
-  const rundomNumberFirst = Math.floor(Math.random() * 100);
-  const rundomNumberSecond = Math.floor(Math.random() * 100);
+  const maxNumForRundomNumber = 100;
+  const rundomNumberFirst = Math.floor(Math.random() * maxNumForRundomNumber);
+  const rundomNumberSecond = Math.floor(Math.random() * maxNumForRundomNumber);
   const question = `${rundomNumberFirst} ${rundomNumberSecond}`;
 
   const answer = String(greatestCommonDivisor(rundomNumberFirst, rundomNumberSecond));

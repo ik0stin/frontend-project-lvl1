@@ -9,17 +9,22 @@ const gameQuestionAnswer = () => {
     return Math.floor(random);
   };
 
-  let firstNumber = Math.floor(Math.random() * 20);
+  const maxNumForFirstNumber = 20;
+  let firstNumber = Math.floor(Math.random() * maxNumForFirstNumber);
   const startNumber = firstNumber;
-  const randomStep = randomLength(1, 9);
+  const startNumberForLength = 1;
+  const endNumberForLength = 9;
+  const randomStep = randomLength(startNumberForLength, endNumberForLength);
   const rundomHiddenNumber = Math.floor(Math.random() * randomStep);
 
   const getArithmeticProgression = () => {
     let result = [];
+    const startNumberForHiddenNumber = 5;
+    const endNumberForHiddenNumber = 10;
     const hiddenElement = '...';
     result.push(String(firstNumber));
 
-    for (let i = 0; i <= randomLength(5, 10); i += 1) {
+    for (let i = 0; i <= randomLength(startNumberForHiddenNumber, endNumberForHiddenNumber); i += 1) {
       let numberOfProgression = firstNumber + randomStep;
       firstNumber = numberOfProgression;
       if (i === rundomHiddenNumber) {

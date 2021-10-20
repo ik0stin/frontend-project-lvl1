@@ -24,9 +24,11 @@ const gameQuestion = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const gameQuestionAnswer = () => {
-  const rundomNumberOfOperator = Math.floor(Math.random() * 3);
-  const rundomNumberFirst = Math.floor(Math.random() * 100);
-  const rundomNumberSecond = Math.floor(Math.random() * 100);
+  const maxNumForRundomNumberOfoperator = 3;
+  const maxNumForRundomNumber = 100;
+  const rundomNumberOfOperator = Math.floor(Math.random() * maxNumForRundomNumberOfoperator);
+  const rundomNumberFirst = Math.floor(Math.random() * maxNumForRundomNumber);
+  const rundomNumberSecond = Math.floor(Math.random() * maxNumForRundomNumber);
 
   const question = `${rundomNumberFirst} ${operators[rundomNumberOfOperator]} ${rundomNumberSecond}`;
   const answer = String(arithmetic(rundomNumberFirst, rundomNumberSecond, operators[rundomNumberOfOperator]));
