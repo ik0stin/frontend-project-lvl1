@@ -10,23 +10,47 @@ const gameQuestionAnswer = () => {
   };
 
   const maxNumForFirstNumber = 20;
-  let firstNumber = Math.floor(Math.random() * maxNumForFirstNumber);
+  const firstNumber = Math.floor(Math.random() * maxNumForFirstNumber);
   const startNumber = firstNumber;
   const startNumberForLength = 1;
   const endNumberForLength = 9;
   const randomStep = randomLength(startNumberForLength, endNumberForLength);
   const rundomHiddenNumber = Math.floor(Math.random() * randomStep);
 
-  const getArithmeticProgression = () => {
-    let result = [];
-    const startNumberForHiddenNumber = 5;
-    const endNumberForHiddenNumber = 10;
-    const hiddenElement = '...';
-    result.push(String(firstNumber));
+  const startNumberForHiddenNumber = 5;
+  const endNumberForHiddenNumber = 10;
+  const hiddenElement = '..';
 
-    for (let i = 0; i <= randomLength(startNumberForHiddenNumber, endNumberForHiddenNumber); i += 1) {
-      let numberOfProgression = firstNumber + randomStep;
-      firstNumber = numberOfProgression;
+  const lengthForHiddenElement = randomLength(startNumberForHiddenNumber, endNumberForHiddenNumber);
+
+  // const getArithmeticProgression = (start, step, length) => {
+  //   let result = [];
+  //   const startNumberForHiddenNumber = 5;
+  //   const endNumberForHiddenNumber = 10;
+  //   const hiddenElement = '..';
+  //   result.push(String(firstNumber));
+
+  //   for (let i = 0; i <= randomLength(startNumberForHiddenNumber, endNumberForHiddenNumber); i += 1) {
+  //     let numberOfProgression = firstNumber + randomStep;
+  //     firstNumber = numberOfProgression;
+  //     if (i === rundomHiddenNumber) {
+  //       numberOfProgression = hiddenElement;
+  //     }
+  //     result.push(String(numberOfProgression));
+  //   }
+
+  //   result = result.join(' ');
+  //   return result;
+  // };
+
+  const getArithmeticProgression = (start, length, step) => {
+    let result = [];
+    let startOfProgression = start;
+    result.push(startOfProgression);
+
+    for (let i = 0; i <= length; i += 1) {
+      let numberOfProgression = startOfProgression + step;
+      startOfProgression = numberOfProgression;
       if (i === rundomHiddenNumber) {
         numberOfProgression = hiddenElement;
       }
@@ -42,7 +66,7 @@ const gameQuestionAnswer = () => {
     return openHiddenElement;
   };
 
-  const question = `${getArithmeticProgression(firstNumber, randomLength, randomStep)}`;
+  const question = `${getArithmeticProgression(firstNumber, lengthForHiddenElement, randomStep)}`;
 
   const answer = String(getHiddenElement());
   return [question, answer];
