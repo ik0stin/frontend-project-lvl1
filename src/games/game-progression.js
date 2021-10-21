@@ -8,6 +8,8 @@ const randomLength = (min, max) => {
   return Math.floor(random);
 };
 
+const minCount = 1;
+const minLength = 5;
 const maxCount = 10;
 
 const getArithmeticProgression = (start, length, step) => {
@@ -20,9 +22,9 @@ const getArithmeticProgression = (start, length, step) => {
 
 const gameQuestionAnswer = () => {
   const firstNumber = Math.floor(Math.random() * maxCount);
-  const randomStep = randomLength(1, maxCount);
-  const rundomHiddenNumber = randomLength(1, randomStep - 1);
-  const lengthForProgerssion = randomLength(5, maxCount);
+  const randomStep = randomLength(minCount, maxCount);
+  const rundomHiddenNumber = randomLength(minCount, randomStep - 1);
+  const lengthForProgerssion = randomLength(minLength, maxCount);
 
   const progression = getArithmeticProgression(firstNumber, lengthForProgerssion, randomStep);
   progression[rundomHiddenNumber] = '..';
