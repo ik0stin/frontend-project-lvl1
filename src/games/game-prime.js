@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import newGame from '../index.js';
+import generateRandom from '../genereteRandom.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -17,8 +18,9 @@ const isPrime = (num) => {
 const gameQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const gameQuestionAnswer = () => {
+  const startNumber = 1;
   const maxNumForRundomNumber = 100;
-  const rundomNumber = Math.floor(Math.random() * maxNumForRundomNumber);
+  const rundomNumber = generateRandom(startNumber, maxNumForRundomNumber);
   const question = `${rundomNumber}`;
   const answer = isPrime(rundomNumber) ? 'yes' : 'no';
   return [question, answer];

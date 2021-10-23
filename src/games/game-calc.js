@@ -1,5 +1,8 @@
 /* eslint-disable max-len */
 import newGame from '../index.js';
+import generateRandom from '../genereteRandom.js';
+
+const gameQuestion = 'What is the result of the expression?';
 
 const arithmetic = (num1, num2, operator) => {
   let result = 0;
@@ -14,21 +17,20 @@ const arithmetic = (num1, num2, operator) => {
       result = num1 * num2;
       break;
     default:
-      break;
+      throw new Error(`operation ${operator} is not supported`);
   }
   return result;
 };
 
-const gameQuestion = 'What is the result of the expression?';
-
 const operators = ['+', '-', '*'];
 
 const gameQuestionAnswer = () => {
+  const startNumber = 2;
   const maxNumForRundomNumberOfoperator = 3;
   const maxNumForRundomNumber = 100;
-  const rundomNumberOfOperator = Math.floor(Math.random() * maxNumForRundomNumberOfoperator);
-  const rundomNumberFirst = Math.floor(Math.random() * maxNumForRundomNumber);
-  const rundomNumberSecond = Math.floor(Math.random() * maxNumForRundomNumber);
+  const rundomNumberOfOperator = generateRandom(startNumber, maxNumForRundomNumberOfoperator);
+  const rundomNumberFirst = generateRandom(startNumber, maxNumForRundomNumber);
+  const rundomNumberSecond = generateRandom(startNumber, maxNumForRundomNumber);
 
   const question = `${rundomNumberFirst} ${operators[rundomNumberOfOperator]} ${rundomNumberSecond}`;
   const answer = String(arithmetic(rundomNumberFirst, rundomNumberSecond, operators[rundomNumberOfOperator]));

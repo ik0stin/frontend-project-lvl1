@@ -1,12 +1,8 @@
 /* eslint-disable max-len */
 import newGame from '../index.js';
+import generateRandom from '../genereteRandom.js';
 
 const gameQuestion = 'What number is missing in the progression?';
-
-const randomLength = (min, max) => {
-  const random = min + Math.random() * (max + 1 - min);
-  return Math.floor(random);
-};
 
 const minCount = 1;
 const minLength = 5;
@@ -21,17 +17,24 @@ const getArithmeticProgression = (start, length, step) => {
 };
 
 const gameQuestionAnswer = () => {
-  const firstNumber = Math.floor(Math.random() * maxCount);
-  const randomStep = randomLength(minCount, maxCount);
-  const rundomHiddenNumber = randomLength(minCount, randomStep - 1);
-  const lengthForProgerssion = randomLength(minLength, maxCount);
+  const firstNumber = generateRandom(minCount, maxCount);
+  const randomStep = generateRandom(minCount, maxCount);
+  const rundomHiddenNumber = generateRandom(minCount, randomStep - 1);
+  const lengthForProgerssion = generateRandom(minLength, maxCount);
 
   const progression = getArithmeticProgression(firstNumber, lengthForProgerssion, randomStep);
-  progression[rundomHiddenNumber] = '..';
+
+  const createHiddenElement = (arr, element) => {
+    const newArr = arr;
+    const newElement = element;
+    newArr[newElement] = '..';
+    return newArr.join(' ');
+  };
+
+  const question = createHiddenElement(progression, rundomHiddenNumber);
 
   const getHiddenElement = firstNumber + randomStep * rundomHiddenNumber;
 
-  const question = progression.join(' ');
   const answer = String(getHiddenElement);
   return [question, answer];
 };
