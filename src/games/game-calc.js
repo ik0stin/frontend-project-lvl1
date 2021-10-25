@@ -25,7 +25,7 @@ const arithmetic = (num1, num2, operator) => {
 const operators = ['+', '-', '*'];
 
 const gameQuestionAnswer = () => {
-  const startNumber = 1;
+  const startNumber = 0;
   const maxNumForRundomNumberOfoperator = 2;
   const maxNumForRundomNumber = 100;
   const rundomNumberOfOperator = generateRandom(startNumber, maxNumForRundomNumberOfoperator);
