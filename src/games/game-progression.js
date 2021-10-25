@@ -33,7 +33,7 @@ const gameQuestionAnswer = () => {
 
   const question = createHiddenElement(progression, rundomHiddenNumber);
 
-  const getHiddenElement = firstNumber + randomStep * rundomHiddenNumber;
+  const getHiddenElement = firstNumber + (randomStep * rundomHiddenNumber);
 
   const answer = String(getHiddenElement);
   return [question, answer];
