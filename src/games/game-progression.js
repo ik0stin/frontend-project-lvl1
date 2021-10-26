@@ -19,8 +19,8 @@ const getArithmeticProgression = (start, length, step) => {
 const gameQuestionAnswer = () => {
   const firstNumber = generateRandom(minCount, maxCount);
   const randomStep = generateRandom(minCount, maxCount);
-  const rundomHiddenNumber = generateRandom(minCount, randomStep - 1);
   const lengthForProgerssion = generateRandom(minLength, maxCount);
+  const rundomHiddenNumber = generateRandom(minCount, lengthForProgerssion);
 
   const progression = getArithmeticProgression(firstNumber, lengthForProgerssion, randomStep);
 

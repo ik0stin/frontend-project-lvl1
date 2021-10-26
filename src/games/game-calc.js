@@ -5,21 +5,16 @@ import generateRandom from '../genereteRandom.js';
 const gameQuestion = 'What is the result of the expression?';
 
 const arithmetic = (num1, num2, operator) => {
-  let result = 0;
   switch (operator) {
     case '+':
-      result = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      result = num1 - num2;
-      break;
+      return num1 - num2;
     case '*':
-      result = num1 * num2;
-      break;
+      return num1 * num2;
     default:
       throw new Error(`operation ${operator} is not supported`);
   }
-  return result;
 };
 
 const operators = ['+', '-', '*'];
