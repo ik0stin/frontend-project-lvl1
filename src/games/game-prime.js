@@ -2,6 +2,8 @@
 import newGame from '../index.js';
 import generateRandom from '../genereteRandom.js';
 
+const gameQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = (num) => {
   if (num < 2) {
     return false;
@@ -14,8 +16,6 @@ const isPrime = (num) => {
   }
   return true;
 };
-
-const gameQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const gameQuestionAnswer = () => {
   const startNumber = 1;

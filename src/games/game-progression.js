@@ -16,6 +16,13 @@ const getArithmeticProgression = (start, length, step) => {
   return progression;
 };
 
+const createProgressionWidthHiddenElement = (progression, element) => {
+  const newArr = progression.slice(0);
+  const newElement = element;
+  newArr[newElement] = '..';
+  return newArr.join(' ');
+};
+
 const gameQuestionAnswer = () => {
   const firstNumber = generateRandom(minCount, maxCount);
   const randomStep = generateRandom(minCount, maxCount);
@@ -24,14 +31,7 @@ const gameQuestionAnswer = () => {
 
   const progression = getArithmeticProgression(firstNumber, lengthForProgerssion, randomStep);
 
-  const createHiddenElement = (arr, element) => {
-    const newArr = arr;
-    const newElement = element;
-    newArr[newElement] = '..';
-    return newArr.join(' ');
-  };
-
-  const question = createHiddenElement(progression, rundomHiddenNumber);
+  const question = createProgressionWidthHiddenElement(progression, rundomHiddenNumber);
 
   const getHiddenElement = firstNumber + (randomStep * rundomHiddenNumber);
 

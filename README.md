@@ -22,20 +22,20 @@ These are 5 logical thinking games. Each game asks questions that need to be ans
 
 ***game is even***
 Run game: brain-even
-https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo
+[![asciicast](https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo.svg)](https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo)
 
 ***game calc***
 Run game: brain-calc
-https://asciinema.org/a/6C52GnnAX8Fe39qdMoBRMSJZe
+[![asciicast](https://asciinema.org/a/6C52GnnAX8Fe39qdMoBRMSJZe.svg)](https://asciinema.org/a/6C52GnnAX8Fe39qdMoBRMSJZe)
 
 ***game gcd***
 Run game: brain-gcd
-https://asciinema.org/a/9TU76l31sm8mpBQTaiAzm0bks
+[![asciicast](https://asciinema.org/a/9TU76l31sm8mpBQTaiAzm0bks.svg)](https://asciinema.org/a/9TU76l31sm8mpBQTaiAzm0bks)
 
 ***game progression***
 Run game: brain-progression
-https://asciinema.org/a/lVZbjzKmRj3Mm2LibNWWCqn3T
+[![asciicast](https://asciinema.org/a/lVZbjzKmRj3Mm2LibNWWCqn3T.svg)](https://asciinema.org/a/lVZbjzKmRj3Mm2LibNWWCqn3T)
 
 ***game prime***
 Run game: brain-prime
-https://asciinema.org/a/azqsGJm66FnQi1n1IqbYqnPZk
+[![asciicast](https://asciinema.org/a/azqsGJm66FnQi1n1IqbYqnPZk.svg)](https://asciinema.org/a/azqsGJm66FnQi1n1IqbYqnPZk)
