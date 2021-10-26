@@ -18,6 +18,8 @@ These are 5 logical thinking games. Each game asks questions that need to be ans
 
 2. Run the command: _make install_
 
+3. Run the command: _npm link_
+
 ***game is even***
 Run game: brain-even
 https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo
