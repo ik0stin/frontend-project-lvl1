@@ -22,7 +22,7 @@ These are 5 logical thinking games. Each game asks questions that need to be ans
 
 ***game is even***
 Run game: brain-even
-[![asciicast](https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo.svg)](https://asciinema.org/a/zsVVor5W6MNasaxUeB0c8BLUo)
+[![asciicast](https://asciinema.org/a/C7d2lRG5DjniSuqh0OcAWOMj9.svg)](https://asciinema.org/a/C7d2lRG5DjniSuqh0OcAWOMj9)
 
 ***game calc***
 Run game: brain-calc
